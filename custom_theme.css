@@ -13,6 +13,8 @@
     --copycode-background: #19191c;
     --table-row-odd-background: #19191c;
     --table-head-background: #252527;
+    --blockquote-padding: 0.5rem 1.5rem;
+    --blockquote-border-radius: 8px;
 }
 
 .title {

@@ -1,3 +1,4 @@
+* [Quick Links](/quick-links.md)
 * [Home](/)
     * [First Steps](start/first-steps.md)
     * [Adding UI](start/adding-ui.md)
