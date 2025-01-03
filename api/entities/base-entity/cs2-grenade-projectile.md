@@ -2,7 +2,7 @@
 
 This type represents a grenade projectile.
 
-> This type inherits [`base_entity`](https://lua.fatality.win/base-entity.html "This type represents a base game entity.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`base_entity`](/api/entities/base-entity "This type represents a base game entity.") type. All of its base methods and fields are also available in this type.
 
 ## get_abs_origin
 
@@ -18,7 +18,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Origin. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Origin. |
 
 **Example**
 

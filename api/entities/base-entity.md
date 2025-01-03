@@ -20,7 +20,7 @@ Attemps to search for a field in this class.
 
 | Type | Description |
 | ---- | ----------- |
-| [`schema_accessor_t`](https://lua.fatality.win/schema-accessor-t.html "This type represents a special structure that references a certain field in the entity object.") | Accessor instance. |
+| [`schema_accessor_t`](/api/entities/base-entity/schema-accessor-t "This type represents a special structure that references a certain field in the entity object.") | Accessor instance. |
 
 **Example**
 

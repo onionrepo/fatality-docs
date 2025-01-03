@@ -160,7 +160,7 @@ The position of the weapon in the inventory slot.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`csweapon_type`](https://lua.fatality.win/csweapon-type.html "This enum represents the weapon type in the game.")
+Type: [`csweapon_type`](/api/entities/csweapon-type "This enum represents the weapon type in the game.")
 
 The type of the weapon.
 
@@ -169,7 +169,7 @@ The type of the weapon.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`csweapon_category`](https://lua.fatality.win/csweapon-category.html "This enum represents the category classification for weapons in the game.")
+Type: [`csweapon_category`](/api/entities/csweapon-category "This enum represents the category classification for weapons in the game.")
 
 The category of the weapon.
 
@@ -349,7 +349,7 @@ The number of bullets fired per shot.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The time between successive shots.
 
@@ -358,7 +358,7 @@ The time between successive shots.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The maximum movement speed of the player while holding this weapon.
 
@@ -367,7 +367,7 @@ The maximum movement speed of the player while holding this weapon.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The base spread of the weapon when fired.
 
@@ -376,7 +376,7 @@ The base spread of the weapon when fired.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The inaccuracy of the weapon while crouching.
 
@@ -385,7 +385,7 @@ The inaccuracy of the weapon while crouching.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The inaccuracy of the weapon while standing.
 
@@ -394,7 +394,7 @@ The inaccuracy of the weapon while standing.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The inaccuracy of the weapon while jumping.
 
@@ -403,7 +403,7 @@ The inaccuracy of the weapon while jumping.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The inaccuracy of the weapon upon landing from a jump.
 
@@ -412,7 +412,7 @@ The inaccuracy of the weapon upon landing from a jump.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The inaccuracy of the weapon while climbing a ladder.
 
@@ -421,7 +421,7 @@ The inaccuracy of the weapon while climbing a ladder.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The inaccuracy of the weapon while firing.
 
@@ -430,7 +430,7 @@ The inaccuracy of the weapon while firing.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The inaccuracy of the weapon while moving.
 
@@ -439,7 +439,7 @@ The inaccuracy of the weapon while moving.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The angle of recoil for the weapon when fired.
 
@@ -448,7 +448,7 @@ The angle of recoil for the weapon when fired.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The variance in the angle of recoil.
 
@@ -457,7 +457,7 @@ The variance in the angle of recoil.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The magnitude of recoil for the weapon.
 
@@ -466,7 +466,7 @@ The magnitude of recoil for the weapon.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<float>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<float>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The variance in the magnitude of recoil.
 
@@ -475,7 +475,7 @@ The variance in the magnitude of recoil.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`cfiring_mode<int>`](https://lua.fatality.win/cfiring-mode.html "Firing mode information.")
+Type: [`cfiring_mode<int>`](/api/entities/ccsweapon-base-vdata/cfiring-mode "Firing mode information.")
 
 The frequency of tracers visible when firing the weapon.
 
@@ -718,7 +718,7 @@ The looseness of the weapon's iron sights when aiming.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).")
+Type: [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).")
 
 The pivot angle for the weapon's iron sights.
 
@@ -727,7 +727,7 @@ The pivot angle for the weapon's iron sights.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).")
+Type: [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).")
 
 The eye position when aiming down the weapon's iron sights.
 
@@ -871,7 +871,7 @@ The velocity of thrown items (e.g., grenades).
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).")
+Type: [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).")
 
 The color of smoke effects for this weapon.
 

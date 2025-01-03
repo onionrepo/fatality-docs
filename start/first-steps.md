@@ -32,7 +32,7 @@ Now, let's break down this example script:
 
 ### Defining a callback function
 
-Most of your scripting will run within [several callbacks](https://lua.fatality.win/events.html "There are a number of events that Fatality provides to use in the API - from various hooks, to in-game events. Each event entry is an object of event_t. This table documents events to be used by your scripts.") we provide. Each event has its own **signature**, so pay attention to the parameters your callback function should accept. `present_queue` doesn’t provide any parameters, so our function doesn’t need any either.
+Most of your scripting will run within [several callbacks](/api/events "There are a number of events that Fatality provides to use in the API - from various hooks, to in-game events. Each event entry is an object of event_t. This table documents events to be used by your scripts.") we provide. Each event has its own **signature**, so pay attention to the parameters your callback function should accept. `present_queue` doesn’t provide any parameters, so our function doesn’t need any either.
 
 ```lua
 local function on_present_queue()
@@ -45,7 +45,7 @@ end
 
 With the callback function defined, let’s actually render something on the screen!
 
-To do this, you first need to access the [drawing layer](https://lua.fatality.win/draw.html#surface "Type: layer"). We provide a single drawing layer that’s safe to use **within the game thread**. Due to how the game functions internally, it’s strongly discouraged to call game functions in other threads. Luckily **all of our events run in the game thread**.
+To do this, you first need to access the [drawing layer](/api/draw#surface "Type: layer"). We provide a single drawing layer that’s safe to use **within the game thread**. Due to how the game functions internally, it’s strongly discouraged to call game functions in other threads. Luckily **all of our events run in the game thread**.
 
 This setup allows you not only to draw but also to query information on player health or other entities.
 
@@ -89,9 +89,3 @@ Now that you’ve created your first callback, you need to register it so Fatali
 ```lua
 events.present_queue:add(on_present_queue);
 ```
-
-### Result
-
-That's it! If you've done everything correctly, you should see something like this:
-
-![Example showcase](https://lua.fatality.win/images/fs.png)

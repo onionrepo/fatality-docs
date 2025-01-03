@@ -43,7 +43,7 @@ Parent control. Might be `nil` on some controls.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`control_type`](https://lua.fatality.win/control-type.html "This enum determines the current control's type.")
+Type: [`control_type`](/api/gui/control/control-type "This enum determines the current control's type.")
 
 Control's type.
 
@@ -67,7 +67,7 @@ Tooltip replacement to show when control is inactive.
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.")
+Type: [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.")
 
 Label color override for inactive controls.
 
@@ -187,7 +187,7 @@ local checkbox = maybe_checkbox:cast();
 
 [![Method][This field is a method and must be invoked using a colon (:).]rw]
 
-Resets control's state. This action is usually required if you change control's value directly by interacting with [`value_param`](https://lua.fatality.win/value-param.html "This type represents a value data used by some control types.").
+Resets control's state. This action is usually required if you change control's value directly by interacting with [`value_param`](/api/gui/control/value-param "This type represents a value data used by some control types.").
 
 **Arguments**
 

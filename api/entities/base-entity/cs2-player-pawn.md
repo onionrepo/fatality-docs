@@ -2,7 +2,7 @@
 
 This type represents a `C_CSPlayerPawn` class.
 
-> This type inherits [`base_entity`](https://lua.fatality.win/base-entity.html "This type represents a base game entity.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`base_entity`](/api/entities/base-entity "This type represents a base game entity.") type. All of its base methods and fields are also available in this type.
 
 ## should_draw
 
@@ -66,7 +66,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Origin. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Origin. |
 
 **Example**
 
@@ -88,7 +88,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Angles. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Angles. |
 
 **Example**
 
@@ -106,7 +106,7 @@ Sets the new absolute origin.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `vec` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | New origin. |
+| `vec` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | New origin. |
 
 **Returns**
 
@@ -128,7 +128,7 @@ Sets new absolute angles.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `ang` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | New angles. |
+| `ang` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | New angles. |
 
 **Returns**
 
@@ -198,7 +198,7 @@ Returns whether this player is an enemy to another entity.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `ent` | [`base_entity`](https://lua.fatality.win/base-entity.html "This type represents a base game entity.") | Other entity. |
+| `ent` | [`base_entity`](/api/entities/base-entity "This type represents a base game entity.") | Other entity. |
 
 **Returns**
 
@@ -228,7 +228,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`cs2_weapon_base_gun`](https://lua.fatality.win/cs2-weapon-base-gun.html "This type represents a CCSWeaponBaseGun class.") | Weapon instance. |
+| [`cs2_weapon_base_gun`](/api/entities/base-entity/cs2-weapon-base-gun "This type represents a CCSWeaponBaseGun class.") | Weapon instance. |
 
 **Example**
 
@@ -272,7 +272,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | View offset. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | View offset. |
 
 **Example**
 
@@ -294,7 +294,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Eye position. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Eye position. |
 
 **Example**
 

@@ -7,7 +7,7 @@ A layer is a type that is used to store render commands, as well as vertex and i
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`command`](https://lua.fatality.win/command.html "This type is used to change render command parameters.")
+Type: [`command`](/api/draw/layer/command "This type is used to change render command parameters.")
 
 The next render command to be pushed to the queue. This is the object you want to change to, for example, set a texture, or change rendering modes.
 
@@ -15,7 +15,7 @@ The next render command to be pushed to the queue. This is the object you want t
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`font_base`](https://lua.fatality.win/font-base.html "This type represents the base class for font types. You cannot create an instance of this type. Instead, use the children types.")
+Type: [`font_base`](/api/draw/managed/font-base "This type represents the base class for font types. You cannot create an instance of this type. Instead, use the children types.")
 
 Font to use with `add_text`. If nothing has been set, no text will get rendered.
 
@@ -23,7 +23,7 @@ Font to use with `add_text`. If nothing has been set, no text will get rendered.
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`vec2?`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.")
+Type: [`vec2?`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.")
 
 Texture dimensions. This value is only required if you are trying to render rounded shapes with a texture, so the rendering system will correctly map your UV coordinates to whatever shape you are rendering.
 
@@ -45,10 +45,10 @@ Adds a filled triangle with a single color.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `a` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | A point. |
-| `b` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | B point. |
-| `c` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | C point. |
-| `col` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Shape color. |
+| `a` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | A point. |
+| `b` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | B point. |
+| `c` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | C point. |
+| `col` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Shape color. |
 
 **Returns**
 
@@ -72,11 +72,11 @@ Adds a filled quad with a single color.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `tl` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Top left point. |
-| `tr` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Top right point. |
-| `br` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Bottom right point. |
-| `bl` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Bottom left point. |
-| `col` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Shape color. |
+| `tl` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Top left point. |
+| `tr` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Top right point. |
+| `br` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Bottom right point. |
+| `bl` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Bottom left point. |
+| `col` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Shape color. |
 
 **Returns**
 
@@ -101,8 +101,8 @@ Adds a filled rectangle with a single color.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | Rectangle. |
-| `col` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Shape color. |
+| `r` | [`rect`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | Rectangle. |
+| `col` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Shape color. |
 
 **Returns**
 
@@ -124,9 +124,9 @@ Adds a filled circle with a single color.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `center` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Center point. |
+| `center` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Center point. |
 | `radius` | `float` | Circle radius. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Shape color. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Shape color. |
 | `segments` | `int` | Circle segments. If set to `0`, will attempt automatic segment deduction. Defaults to `0`. |
 | `fill` | `float` | Fill amount (clockwise, `0` to `1`). Defaults to `1`. |
 
@@ -150,9 +150,9 @@ Adds a filled, multicolor triangle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `a` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | A point. |
-| `b` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | B point. |
-| `c` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | C point. |
+| `a` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | A point. |
+| `b` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | B point. |
+| `c` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | C point. |
 | `cols` | `table[color, color, color]` | Colors for each point. Colors go in the very same order as the parameter list. |
 
 **Returns**
@@ -181,7 +181,7 @@ Adds a filled, multicolor rectangle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | Rectangle. |
+| `r` | [`rect`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | Rectangle. |
 | `cols` | `table[color, color, color, color]` | Colors for each corner of the rectangle, in clockwise order starting from top-left. |
 
 **Returns**
@@ -210,7 +210,7 @@ Adds a filled, multicolor circle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `center` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Center point. |
+| `center` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Center point. |
 | `radius` | `float` | Circle radius. |
 | `cols` | `table[color, color]` | Colors for the gradient, starting with the inner and ending with the outer color. |
 | `segments` | `int` | The number of segments to approximate the circle. Defaults to `36`. |
@@ -240,10 +240,10 @@ Adds a filled, multicolor quad.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `tl` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Top left point. |
-| `tr` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Top right point. |
-| `br` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Bottom right point. |
-| `bl` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Bottom left point. |
+| `tl` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Top left point. |
+| `tr` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Top right point. |
+| `br` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Bottom right point. |
+| `bl` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Bottom left point. |
 | `cols` | `table[color, color]` | Colors for the gradient, applied from bottom to top. |
 
 **Returns**
@@ -271,8 +271,8 @@ Adds a multicolor pill shape.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `mins` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Top left point of the pill. |
-| `maxs` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Bottom right point of the pill. |
+| `mins` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Top left point of the pill. |
+| `maxs` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Bottom right point of the pill. |
 | `radius_min` | `float` | The minimum radius of the pill's rounded edges. |
 | `radius_max` | `float` | The maximum radius of the pill's rounded edges. |
 | `cols` | `table[color, color]` | Colors for the gradient, applied from bottom to top. |
@@ -303,8 +303,8 @@ Adds a shadow line.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | Bounding box for the shadow line. |
-| `dir` | [`shadow_dir`](https://lua.fatality.win/shadow-dir.html "This enum is used to determine shadow direction for add_shadow_line method.") | Shadow direction. |
+| `r` | [`rect`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | Bounding box for the shadow line. |
+| `dir` | [`shadow_dir`](/api/draw/layer/shadow-dir "This enum is used to determine shadow direction for add_shadow_line method.") | Shadow direction. |
 | `a` | `float` | Max opacity. Defaults to `0.25`. |
 
 **Returns**
@@ -328,7 +328,7 @@ Adds a shadowed rectangle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | Rectangle. |
+| `r` | [`rect`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | Rectangle. |
 | `radius` | `float` | Shadow distance, in pixels, outwards. |
 | `bg` | `bool` | Whether to draw a background for the rectangle. Defaults to `true`. |
 | `a` | `float` | Max opacity of the shadow. Defaults to `0.25`. |
@@ -354,10 +354,10 @@ Adds a glow box.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | Box rectangle. |
+| `r` | [`rect`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | Box rectangle. |
 | `radius` | `float` | Glow distance, in pixels, outwards. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Glow color. |
-| `parts` | [`glow_parts`](https://lua.fatality.win/glow-parts.html "This enum is used to determine which parts of the glow around the shape should get rendered.") | Parts of the glow to enable. Defaults to `all`. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Glow color. |
+| `parts` | [`glow_parts`](/api/draw/layer/glow-parts "This enum is used to determine which parts of the glow around the shape should get rendered.") | Parts of the glow to enable. Defaults to `all`. |
 
 **Returns**
 
@@ -379,10 +379,10 @@ Adds a filled, rounded rectangle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | Rectangle. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Fill color. |
+| `r` | [`rect`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | Rectangle. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Fill color. |
 | `amount` | `float` | Rounding amount. |
-| `rnd` | [`rounding`](https://lua.fatality.win/rounding.html "This enum is used to determine the rounding for rounded shapes.") | Rounding mode. Defaults to `all`. |
+| `rnd` | [`rounding`](/api/draw/layer/rounding "This enum is used to determine the rounding for rounded shapes.") | Rounding mode. Defaults to `all`. |
 
 **Returns**
 
@@ -409,10 +409,10 @@ Adds a filled, multicolor rounded rectangle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | Rectangle. |
+| `r` | [`rect`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | Rectangle. |
 | `c` | `table[color, color, color, color]` | Fill colors. Used clockwise, starting from top left. |
 | `amount` | `float` | Rounding amount. |
-| `rnd` | [`rounding`](https://lua.fatality.win/rounding.html "This enum is used to determine the rounding for rounded shapes.") | Rounding mode. Defaults to `all`. |
+| `rnd` | [`rounding`](/api/draw/layer/rounding "This enum is used to determine the rounding for rounded shapes.") | Rounding mode. Defaults to `all`. |
 
 **Returns**
 
@@ -443,12 +443,12 @@ Adds a stroked triangle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `a` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Point A. |
-| `b` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Point B. |
-| `c` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Point C. |
-| `col` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Line color. |
+| `a` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Point A. |
+| `b` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Point B. |
+| `c` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Point C. |
+| `col` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Line color. |
 | `thickness` | `float` | Line thickness. Defaults to `1.0`. |
-| `mode` | [`outline_mode`](https://lua.fatality.win/outline-mode.html "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
+| `mode` | [`outline_mode`](/api/draw/layer/outline-mode "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
 
 **Returns**
 
@@ -477,13 +477,13 @@ Adds a stroked quad.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `tl` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Top-left point. |
-| `tr` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Top-right point. |
-| `br` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Bottom-right point. |
-| `bl` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Bottom-left point. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Line color. |
+| `tl` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Top-left point. |
+| `tr` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Top-right point. |
+| `br` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Bottom-right point. |
+| `bl` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Bottom-left point. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Line color. |
 | `thickness` | `float` | Line thickness. Defaults to `1.0`. |
-| `mode` | [`outline_mode`](https://lua.fatality.win/outline-mode.html "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
+| `mode` | [`outline_mode`](/api/draw/layer/outline-mode "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
 
 **Returns**
 
@@ -513,10 +513,10 @@ Adds a stroked rectangle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | Rectangle. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Line color. |
+| `r` | [`rect`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | Rectangle. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Line color. |
 | `thickness` | `float` | Line thickness. Defaults to `1.0`. |
-| `mode` | [`outline_mode`](https://lua.fatality.win/outline-mode.html "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
+| `mode` | [`outline_mode`](/api/draw/layer/outline-mode "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
 
 **Returns**
 
@@ -543,13 +543,13 @@ Adds a stroked circle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `center` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Center point. |
+| `center` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Center point. |
 | `radius` | `float` | Circle radius. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Line color. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Line color. |
 | `segments` | `int` | Circle segments. Defaults to `36`. |
 | `fill` | `float` | Fill amount. Defaults to `1.0`. |
 | `thickness` | `float` | Line thickness. Defaults to `1.0`. |
-| `mode` | [`outline_mode`](https://lua.fatality.win/outline-mode.html "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
+| `mode` | [`outline_mode`](/api/draw/layer/outline-mode "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
 
 **Returns**
 
@@ -579,9 +579,9 @@ Adds a line.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `a` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Start point. |
-| `b` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | End point. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Line color. |
+| `a` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Start point. |
+| `b` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | End point. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Line color. |
 | `thickness` | `float` | Line thickness. Defaults to `1.0` |
 
 **Returns**
@@ -608,10 +608,10 @@ Adds a multicolor line.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `a` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Start point. |
-| `b` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | End point. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Start color. |
-| `c2` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | End color. |
+| `a` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Start point. |
+| `b` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | End point. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Start color. |
+| `c2` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | End color. |
 | `thickness` | `float` | Line thickness. Defaults to `1.0`. |
 
 **Returns**
@@ -640,12 +640,12 @@ Adds a rounded, filled rectangle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | Rectangle. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Line color. |
+| `r` | [`rect`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | Rectangle. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Line color. |
 | `amount` | `float` | Rounding amount. |
-| `rnd` | [`rounding`](https://lua.fatality.win/rounding.html "This enum is used to determine the rounding for rounded shapes.") | Rounding mode. Defaults to `all`. |
+| `rnd` | [`rounding`](/api/draw/layer/rounding "This enum is used to determine the rounding for rounded shapes.") | Rounding mode. Defaults to `all`. |
 | `thickness` | `float` | Line thickness. Defaults to `1.0`. |
-| `mode` | [`outline_mode`](https://lua.fatality.win/outline-mode.html "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
+| `mode` | [`outline_mode`](/api/draw/layer/outline-mode "This enum is used to determine the outline mode for outlined shapes.") | Outline mode. Defaults to `inset`. |
 
 **Returns**
 
@@ -670,10 +670,10 @@ Adds text.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `p` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Text origin point. |
+| `p` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Text origin point. |
 | `text` | `string` | Text. |
-| `c` | [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.") | Text color. |
-| `params` | [`text_params?`](https://lua.fatality.win/text-params.html "This type is used to determine text alignment.") | Text aligning parameters. Defaults to `nil`. |
+| `c` | [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.") | Text color. |
+| `params` | [`text_params?`](/api/draw/layer/text-params "This type is used to determine text alignment.") | Text aligning parameters. Defaults to `nil`. |
 
 **Returns**
 
@@ -695,7 +695,7 @@ Overrides clip rectangle with support of intersection.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `r` | [`rect?`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.") | New clip rect. |
+| `r` | [`rect?`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.") | New clip rect. |
 | `intersect` | `bool` | Whether this function should intersect previous rect with the new one. Defaults to `true`. |
 
 **Returns**

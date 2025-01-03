@@ -14,7 +14,7 @@ Constructs the notification.
 | ---- | ---- | ----------- |
 | `hdr` | `string` | Header (title). |
 | `txt` | `string` | Text (body). |
-| `ico` | [`texture?`](https://lua.fatality.win/texture.html "This type represents a texture object.") | Icon. Defaults to `nil`. |
+| `ico` | [`texture?`](/api/draw/managed/texture "This type represents a texture object.") | Icon. Defaults to `nil`. |
 
 **Returns**
 

@@ -12,7 +12,7 @@ Adds a notification to the list.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `notif` | [`notification`](https://lua.fatality.win/notification.html "This type represents a notification item.") | Notification object. |
+| `notif` | [`notification`](/api/gui/notification-system/notification "This type represents a notification item.") | Notification object. |
 
 **Returns**
 

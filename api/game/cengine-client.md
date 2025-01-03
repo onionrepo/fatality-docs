@@ -110,7 +110,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`cnet_chan`](https://lua.fatality.win/cnet-chan.html "Provides a way to interface with a Network Channel's class") | Network channel, or `nil` if does not exist. |
+| [`cnet_chan`](/api/game/cengine-client/cnet-chan "Provides a way to interface with a Network Channel's class") | Network channel, or `nil` if does not exist. |
 
 **Example**
 

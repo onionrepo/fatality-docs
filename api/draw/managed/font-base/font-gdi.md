@@ -2,7 +2,7 @@
 
 This type represents a font object. Internally, this type uses **GDI** library to rasterize font glyphs.
 
-> This type inherits [`font_base`](https://lua.fatality.win/font-base.html "This type represents the base class for font types. You cannot create an instance of this type. Instead, use the children types.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`font_base`](/api/draw/managed/font-base "This type represents the base class for font types. You cannot create an instance of this type. Instead, use the children types.") type. All of its base methods and fields are also available in this type.
 
 ## __call
 
@@ -16,7 +16,7 @@ Constructs a font object.
 | ---- | ---- | ----------- |
 | `name` | `string` | System font name (example: 'Arial'). |
 | `size` | `float` | Font height, in pixels. |
-| `fl` | [`font_flags`](https://lua.fatality.win/font-flags.html "This enum determines which flags a font object should possess. Setting those flags is only possible during type construction.") | Font flags. Use `bit` library to construct them. Defaults to `0`. |
+| `fl` | [`font_flags`](/api/draw/managed/font-base/font-flags "This enum determines which flags a font object should possess. Setting those flags is only possible during type construction.") | Font flags. Use `bit` library to construct them. Defaults to `0`. |
 | `mi` | `int` | Starting codepoint. Defaults to `0`. |
 | `ma` | `int` | Ending codepoint. Defaults to `255` (entire ASCII code page). |
 | `weight` | `int` | Font weight. Defaults to `400` (regular). |

@@ -1,6 +1,6 @@
 ## event_t
 
-Event usertype. An instance of this type can be found in [`events`](https://lua.fatality.win/events.html "There are a number of events that Fatality provides to use in the API - from various hooks, to in-game events. Each event entry is an object of event_t. This table documents events to be used by your scripts.").
+Event usertype. An instance of this type can be found in [`events`](/api/events "There are a number of events that Fatality provides to use in the API - from various hooks, to in-game events. Each event entry is an object of event_t. This table documents events to be used by your scripts.").
 
 ## add
 

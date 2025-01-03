@@ -138,7 +138,7 @@ Returns the controller by key.
 
 | Type | Description |
 | ---- | ----------- |
-| [`cs2_player_controller`](https://lua.fatality.win/cs2-player-controller.html "This type represents a CCSPlayerController class.") | Controller. |
+| [`cs2_player_controller`](/api/entities/base-entity/cs2-player-controller "This type represents a CCSPlayerController class.") | Controller. |
 
 **Example**
 
@@ -162,7 +162,7 @@ Returns the pawn by key.
 
 | Type | Description |
 | ---- | ----------- |
-| [`cs2_player_pawn`](https://lua.fatality.win/cs2-player-pawn.html "This type represents a C_CSPlayerPawn class.") | Pawn. |
+| [`cs2_player_pawn`](/api/entities/base-entity/cs2-player-pawn "This type represents a C_CSPlayerPawn class.") | Pawn. |
 
 **Example**
 

@@ -12,13 +12,13 @@ local cb = gui.checkbox(gui.control_id('my_checkbox'));
 
 Each control has a **unique ID**, which the UI framework uses to distinguish controls within containers. It’s very important that your control’s ID doesn’t conflict with others, as that could result in a broken state or worse.
 
-To create the ID, call [`gui.control_id`](https://lua.fatality.win/control-id.html#call "Constructs the ID structure.") and pass the desired ID.
+To create the ID, call [`gui.control_id`](/api/gui/common-types/control-id#call "Constructs the ID structure.") and pass the desired ID.
 
-Then, create the checkbox by calling [`gui.checkbox`](https://lua.fatality.win/checkbox.html#call "Constructs the checkbox.") and passing the ID structure you've created.
+Then, create the checkbox by calling [`gui.checkbox`](/api/gui/control/checkbox?id=__call "Constructs the checkbox.") and passing the ID structure you've created.
 
 ## Constructing the row
 
-By default, controls are typically placed in **rows** - layouts that stack elements in a specific manner. We provide a simple helper function - [`gui.make_control`](https://lua.fatality.win/gui.html#make-control "Wraps a control into a layout consisting of a label and that specific control. You should add this new control to groupboxes if you want your control to be displayed nicely. Additionally, you can add any extra controls to the returned one - those will get stacked to the left side of...").
+By default, controls are typically placed in **rows** - layouts that stack elements in a specific manner. We provide a simple helper function - [`gui.make_control`](/api/gui?id=make_control "Wraps a control into a layout consisting of a label and that specific control. You should add this new control to groupboxes if you want your control to be displayed nicely. Additionally, you can add any extra controls to the returned one - those will get stacked to the left side of...").
 
 ```lua
 local row = gui.make_control('My checkbox', cb);
@@ -36,7 +36,7 @@ In this example, we'll use the `lua>elements a` group. First, locate that group 
 local group = gui.ctx:find('lua>elements a');
 ```
 
-Then call its [`add`](https://lua.fatality.win/container.html#add "Adds a control to the container.") method to include your row:
+Then call its [`add`](/api/gui/container?id=add "Adds a control to the container.") method to include your row:
 
 ```lua
 group:add(row);
@@ -75,7 +75,3 @@ end
 
 events.present_queue:add(on_present_queue);
 ```
-
-And here's the result:
-
-![Example showcase](https://lua.fatality.win/images/ex1.png)

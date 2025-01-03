@@ -2,7 +2,7 @@
 
 This type represents a shader. [`HLSL documentation`](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference)
 
-> This type inherits [`managed`](https://lua.fatality.win/managed.html "This type represents a managed object. You cannot create an instance of this type directly.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`managed`](/api/draw/managed "This type represents a managed object. You cannot create an instance of this type directly.") type. All of its base methods and fields are also available in this type.
 
 > Only fragment shaders (aka Pixel Shaders) are supported.
 

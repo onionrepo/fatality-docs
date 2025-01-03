@@ -30,6 +30,6 @@ local some_cb = ctx:find('some_cb');
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`user_t`](https://lua.fatality.win/user-t.html "This type represents basic user information.")
+Type: [`user_t`](/api/gui/context/user-t "This type represents basic user information.")
 
 User's basic information.

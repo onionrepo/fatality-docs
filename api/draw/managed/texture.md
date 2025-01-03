@@ -2,7 +2,7 @@
 
 This type represents a texture object.
 
-> This type inherits [`managed`](https://lua.fatality.win/managed.html "This type represents a managed object. You cannot create an instance of this type directly.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`managed`](/api/draw/managed "This type represents a managed object. You cannot create an instance of this type directly.") type. All of its base methods and fields are also available in this type.
 
 > Supported texture formats are:
 > * JPEG (.jpg, .jpeg) - 12 bpc/arithmetic are not supported
@@ -10,7 +10,7 @@ This type represents a texture object.
 > * TGA (.tga) 
 > * BMP (.bmp) - 1 bpp and RLE variants are not supported
 > * PSD (.psd) - composited view only, no extra channels, 8/16 bpc
-> * GIF (.gif) - only first frame, for animated gifs use [`animated_texture`](https://lua.fatality.win/animated-texture.html "This type is an animated texture. This texture type only supports GIF types, and does not support APNG.")
+> * GIF (.gif) - only first frame, for animated gifs use [`animated_texture`](/api/draw/managed/texture/animated-texture "This type is an animated texture. This texture type only supports GIF types, and does not support APNG.")
 > * HDR (.hdr)
 > * PIC (.pic)
 > * PNM (.pnm, .ppm, .pgm) - PPM and PGM are binary only
@@ -35,14 +35,14 @@ Constructs an instance of this type.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `data` | [`ptr`](https://lua.fatality.win/ptr.html "This type is a literal pointer.") | Pointer to texture **file** data in memory. |
+| `data` | [`ptr`](/api/common-types/ptr "This type is a literal pointer.") | Pointer to texture **file** data in memory. |
 | `sz` | `int` | Size of the texture **file** data. |
 
 *3. From RGBA data:*
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `data` | [`ptr`](https://lua.fatality.win/ptr.html "This type is a literal pointer.") | Pointer to **RGBA** data in memory. |
+| `data` | [`ptr`](/api/common-types/ptr "This type is a literal pointer.") | Pointer to **RGBA** data in memory. |
 | `w` | `int` | Width. |
 | `h` | `int` | Height (row count). |
 | `p` | `int` | Pitch (row width). This is the amount of **bytes** per row. |
@@ -66,7 +66,7 @@ local tex = draw.texture('funny_meme.png');
 
 **Type:** `bool`
 
-Set to `true` if this is an instance of [`animated_texture`](https://lua.fatality.win/animated-texture.html "This type is an animated texture. This texture type only supports GIF types, and does not support APNG.").
+Set to `true` if this is an instance of [`animated_texture`](/api/draw/managed/texture/animated-texture "This type is an animated texture. This texture type only supports GIF types, and does not support APNG.").
 
 ## get_size
 
@@ -82,7 +82,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Texture dimensions. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Texture dimensions. |
 
 **Example**
 

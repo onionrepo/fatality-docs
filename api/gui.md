@@ -10,7 +10,7 @@ This table exposes the GUI system of the software.
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`context`](https://lua.fatality.win/context.html "This type represents the GUI context.")
+Type: [`context`](/api/gui/context "This type represents the GUI context.")
 
 GUI context.
 
@@ -18,7 +18,7 @@ GUI context.
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`notification_system`](https://lua.fatality.win/notification-system.html "This type represents a notification system.")
+Type: [`notification_system`](/api/gui/notification-system "This type represents a notification system.")
 
 Notification system.
 
@@ -33,13 +33,13 @@ Wraps a control into a layout consisting of a label and that specific control. Y
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | `text` | `string` | Label value. |
-| `c` | [`control`](https://lua.fatality.win/control.html "This type represents an abstract GUI control.") | Control object. |
+| `c` | [`control`](/api/gui/control "This type represents an abstract GUI control.") | Control object. |
 
 **Returns**
 
 | Type | Description |
 | ---- | ----------- |
-| [`layout`](https://lua.fatality.win/layout.html "This type represents a layout control.") | Layout object. |
+| [`layout`](/api/gui/container/control-container/layout "This type represents a layout control.") | Layout object. |
 
 **Example**
 

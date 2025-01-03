@@ -2,7 +2,7 @@
 
 This type represents the base class for font types. You cannot create an instance of this type. Instead, use the children types.
 
-> This type inherits [`managed`](https://lua.fatality.win/managed.html "This type represents a managed object. You cannot create an instance of this type directly.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`managed`](/api/draw/managed "This type represents a managed object. You cannot create an instance of this type directly.") type. All of its base methods and fields are also available in this type.
 
 > Definitions:
 > * **codepoint**: Unicode representation of the character.
@@ -63,7 +63,7 @@ Font outline opacity (`0` to `1`). Defaults to `0.45`.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`font_flags`](https://lua.fatality.win/font-flags.html "This enum determines which flags a font object should possess. Setting those flags is only possible during type construction.")
+Type: [`font_flags`](/api/draw/managed/font-base/font-flags "This enum determines which flags a font object should possess. Setting those flags is only possible during type construction.")
 
 Font flags. Use `bit` library to read flags.
 
@@ -95,7 +95,7 @@ Fallback font to use, in case a glyph is not found in this font. Is it useful wh
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`color`](https://lua.fatality.win/rcolor.html "This type is a color used within the rendering system.")
+Type: [`color`](/api/draw/common-types/color "This type is a color used within the rendering system.")
 
 Shadow color. Only R, G, B values are used.
 
@@ -166,7 +166,7 @@ Returns text area size.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Text area size. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Text area size. |
 
 **Example**
 
@@ -215,7 +215,7 @@ Returns glyph information for a character.
 
 | Type | Description |
 | ---- | ----------- |
-| [`glyph_t`](https://lua.fatality.win/glyph-t.html "This type represents a glyph object.") | Glyph information. |
+| [`glyph_t`](/api/draw/managed/font-base/glyph-t "This type represents a glyph object.") | Glyph information. |
 
 **Example**
 
@@ -233,7 +233,7 @@ Returns a texture atlas that contains the provided glyph.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `gl` | [`glyph_t`](https://lua.fatality.win/glyph-t.html "This type represents a glyph object.") | Character glyph. |
+| `gl` | [`glyph_t`](/api/draw/managed/font-base/glyph-t "This type represents a glyph object.") | Character glyph. |
 
 **Returns**
 

@@ -12,7 +12,7 @@ Adds a control to the container.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `ctrl` | [`control`](https://lua.fatality.win/control.html "This type represents an abstract GUI control.") | Control to add. |
+| `ctrl` | [`control`](/api/gui/control "This type represents an abstract GUI control.") | Control to add. |
 
 **Returns**
 
@@ -34,7 +34,7 @@ Removes a control from the container.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `ctrl` | [`control`](https://lua.fatality.win/control.html "This type represents an abstract GUI control.") | Control to remove. |
+| `ctrl` | [`control`](/api/gui/control "This type represents an abstract GUI control.") | Control to remove. |
 
 **Returns**
 

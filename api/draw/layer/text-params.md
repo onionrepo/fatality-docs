@@ -14,7 +14,7 @@ Creates `text_params` instance with vertical alignment.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `v` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Vertical alignment. |
+| `v` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Vertical alignment. |
 
 **Returns**
 
@@ -38,7 +38,7 @@ Creates text_params instance with horizontal alignment.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `h` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Horizontal alignment. |
+| `h` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Horizontal alignment. |
 
 **Returns**
 
@@ -62,7 +62,7 @@ Creates text_params instance with line alignment.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `line` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Line alignment. |
+| `line` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Line alignment. |
 
 **Returns**
 
@@ -86,8 +86,8 @@ Creates text_params instance with vertical and horizontal alignments.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `v` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Vertical alignment. |
-| `h` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Horizontal alignment. |
+| `v` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Vertical alignment. |
+| `h` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Horizontal alignment. |
 
 **Returns**
 
@@ -111,8 +111,8 @@ Creates text_params instance with vertical alignment and line alignment.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `v` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Vertical alignment. |
-| `line` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Line alignment. |
+| `v` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Vertical alignment. |
+| `line` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Line alignment. |
 
 **Returns**
 
@@ -136,8 +136,8 @@ Creates text_params instance with horizontal alignment and line alignment.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `h` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Horizontal alignment. |
-| `line` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Line alignment. |
+| `h` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Horizontal alignment. |
+| `line` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Line alignment. |
 
 **Returns**
 
@@ -161,9 +161,9 @@ Creates text_params instance with vertical, horizontal and line alignments.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `v` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Vertical alignment. |
-| `h` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Horizontal alignment. |
-| `line` | [`text_alignment`](https://lua.fatality.win/text-alignment.html "This enum determines how to align the text when drawing it.") | Line alignment. |
+| `v` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Vertical alignment. |
+| `h` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Horizontal alignment. |
+| `line` | [`text_alignment`](/api/draw/layer/text-params/text-alignment "This enum determines how to align the text when drawing it.") | Line alignment. |
 
 **Returns**
 

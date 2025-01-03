@@ -22,7 +22,7 @@ Rendering adapter.
 
 Type: `float`
 
-Rendering frame time. An alias to [`global_vars_t.frame_time`](https://lua.fatality.win/global-vars-t.html#frame-time "Type: float").
+Rendering frame time. An alias to [`global_vars_t.frame_time`](/api/game/global-vars-t?id=frame_time "Type: float").
 
 ## time
 
@@ -31,7 +31,7 @@ Rendering frame time. An alias to [`global_vars_t.frame_time`](https://lua.fatal
 
 Type: `float`
 
-Time, in seconds. An alias to [`global_vars_t.real_time`](https://lua.fatality.win/global-vars-t.html#real-time "Type: float").
+Time, in seconds. An alias to [`global_vars_t.real_time`](/api/game/global-vars-t?id=real_time "Type: float").
 
 ## scale
 
@@ -47,18 +47,18 @@ Global DPI scale.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.")
+Type: [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.")
 
-Display area size (viewport dimensions). [`cengine_client:get_screen_size`](https://lua.fatality.win/cengine-client.html#get-screen-size "Returns client window screen size.") will return exactly the same values. Overriding any of this vector's values will lead to an undefined behavior.
+Display area size (viewport dimensions). [`cengine_client:get_screen_size`](/api/game/cengine-client?id=get_screen_size "Returns client window screen size.") will return exactly the same values. Overriding any of this vector's values will lead to an undefined behavior.
 
 ## textures
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`accessor<texture>`](https://lua.fatality.win/accessor.html "This type represents a safe way to access maps.")
+Type: [`accessor<texture>`](/api/draw/common-types/accessor "This type represents a safe way to access maps.")
 
-A string to [`texture`](https://lua.fatality.win/texture.html "This type represents a texture object.") map of all managed textures. You can query and push textures with custom IDs. When you add a texture to this map, it will be automatically destroyed and recreated when required (such as when DX11 device gets lost).
+A string to [`texture`](/api/draw/managed/texture "This type represents a texture object.") map of all managed textures. You can query and push textures with custom IDs. When you add a texture to this map, it will be automatically destroyed and recreated when required (such as when DX11 device gets lost).
 
 > Built-in textures:
 > * `gui_loading`: loading spinner
@@ -100,9 +100,9 @@ A string to [`texture`](https://lua.fatality.win/texture.html "This type represe
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`accessor<font_base>`](https://lua.fatality.win/accessor.html "This type represents a safe way to access maps.")
+Type: [`accessor<font_base>`](/api/draw/common-types/accessor "This type represents a safe way to access maps.")
 
-A string to [`font_base`](https://lua.fatality.win/font-base.html "This type represents the base class for font types. You cannot create an instance of this type. Instead, use the children types.") map of all managed fonts. You can query and push fonts with custom IDs. When you add a font to this map, it will be automatically destroyed and recreated when required (such as when DX11 device gets lost).
+A string to [`font_base`](/api/draw/managed/font-base "This type represents the base class for font types. You cannot create an instance of this type. Instead, use the children types.") map of all managed fonts. You can query and push fonts with custom IDs. When you add a font to this map, it will be automatically destroyed and recreated when required (such as when DX11 device gets lost).
 
 > Built-in fonts:
 > * `gui_debug`: Verdana, 13px
@@ -120,9 +120,9 @@ A string to [`font_base`](https://lua.fatality.win/font-base.html "This type rep
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`accessor<shader>`](https://lua.fatality.win/accessor.html "This type represents a safe way to access maps.")
+Type: [`accessor<shader>`](/api/draw/common-types/accessor "This type represents a safe way to access maps.")
 
-A string to [`shader`](https://lua.fatality.win/shader.html "This type represents a shader. HLSL documentation") map of all managed shader. You can query and push shader with custom IDs. When you add a shader to this map, it will be automatically destroyed and recreated when required (such as when DX11 device gets lost).
+A string to [`shader`](/api/draw/managed/shader "This type represents a shader. HLSL documentation") map of all managed shader. You can query and push shader with custom IDs. When you add a shader to this map, it will be automatically destroyed and recreated when required (such as when DX11 device gets lost).
 
 > Built-in shaders:
 > * `blur_f`: gaussian blur shader
@@ -132,6 +132,6 @@ A string to [`shader`](https://lua.fatality.win/shader.html "This type represent
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`layer`](https://lua.fatality.win/layer.html "A layer is a type that is used to store render commands, as well as vertex and index data. This is the only way to push shapes and control rendering state.")
+Type: [`layer`](/api/draw/layer "A layer is a type that is used to store render commands, as well as vertex and index data. This is the only way to push shapes and control rendering state.")
 
 The layer you can render on.

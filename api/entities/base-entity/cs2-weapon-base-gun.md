@@ -2,7 +2,7 @@
 
 This type represents a `CCSWeaponBaseGun` class.
 
-> This type inherits [`base_entity`](https://lua.fatality.win/base-entity.html "This type represents a base game entity.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`base_entity`](/api/entities/base-entity "This type represents a base game entity.") type. All of its base methods and fields are also available in this type.
 
 ## get_abs_origin
 
@@ -18,7 +18,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Origin. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Origin. |
 
 **Example**
 
@@ -58,7 +58,7 @@ Returns the current inaccuracy value.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `mode` | [`csweapon_mode`](https://lua.fatality.win/csweapon-mode.html "This enum represents the firing mode for a weapon.") | Weapon mode. |
+| `mode` | [`csweapon_mode`](/api/entities/csweapon-mode "This enum represents the firing mode for a weapon.") | Weapon mode. |
 
 **Returns**
 
@@ -82,7 +82,7 @@ Returns the current spread value.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `mode` | [`csweapon_mode`](https://lua.fatality.win/csweapon-mode.html "This enum represents the firing mode for a weapon.") | Weapon mode. |
+| `mode` | [`csweapon_mode`](/api/entities/csweapon-mode "This enum represents the firing mode for a weapon.") | Weapon mode. |
 
 **Returns**
 
@@ -110,7 +110,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`weapon_id`](https://lua.fatality.win/weapon-id.html "This enum represents the unique identifier for various weapons in the game.") | Weapon ID. |
+| [`weapon_id`](/api/entities/weapon-id "This enum represents the unique identifier for various weapons in the game.") | Weapon ID. |
 
 **Example**
 
@@ -132,7 +132,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`csweapon_type`](https://lua.fatality.win/csweapon-type.html "This enum represents the weapon type in the game.") | Weapon type. |
+| [`csweapon_type`](/api/entities/csweapon-type "This enum represents the weapon type in the game.") | Weapon type. |
 
 **Example**
 
@@ -154,7 +154,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`ccsweapon_base_vdata`](https://lua.fatality.win/ccsweapon-base-vdata.html "This type represents a weapon's static data.") | Weapon data. |
+| [`ccsweapon_base_vdata`](/api/entities/ccsweapon-base-vdata "This type represents a weapon's static data.") | Weapon data. |
 
 **Example**
 

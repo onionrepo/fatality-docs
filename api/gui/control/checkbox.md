@@ -2,7 +2,7 @@
 
 This type represents a checkbox control.
 
-> This type inherits [`control`](https://lua.fatality.win/control.html "This type represents an abstract GUI control.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`control`](/api/gui/control "This type represents an abstract GUI control.") type. All of its base methods and fields are also available in this type.
 
 ## __call
 
@@ -14,7 +14,7 @@ Constructs the checkbox.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `id` | [`control_id`](https://lua.fatality.win/control-id.html "This type represents a control ID.") | ID. |
+| `id` | [`control_id`](/api/gui/common-types/control-id "This type represents a control ID.") | ID. |
 
 **Returns**
 
@@ -42,7 +42,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`value_param<bool>`](https://lua.fatality.win/value-param.html "This type represents a value data used by some control types.") | Value data. |
+| [`value_param<bool>`](/api/gui/control/value-param "This type represents a value data used by some control types.") | Value data. |
 
 **Example**
 
@@ -56,7 +56,7 @@ local val = cb:get_value():get();
 
 Sets checkbox' value.
 
-> It is advised to use this method instead of [`value_param`](https://lua.fatality.win/value-param.html "This type represents a value data used by some control types.")'s [`set`](https://lua.fatality.win/value-param.html#set "Sets the value.") method.
+> It is advised to use this method instead of [`value_param`](/api/gui/control/value-param "This type represents a value data used by some control types.")'s [`set`](/api/gui/control/value-param?id=set "Sets the value.") method.
 
 **Arguments**
 

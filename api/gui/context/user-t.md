@@ -7,7 +7,7 @@ This type represents basic user information.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
 
-Type: [`texture?`](https://lua.fatality.win/texture.html "This type represents a texture object.")
+Type: [`texture?`](/api/draw/managed/texture "This type represents a texture object.")
 
 User's avatar. May be `nil`.
 

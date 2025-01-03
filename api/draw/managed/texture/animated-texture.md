@@ -2,11 +2,11 @@
 
 This type is an animated texture. This texture type only supports **animated GIF** types, and does not support **APNG**.
 
-> This type inherits [`texture`](https://lua.fatality.win/texture.html "This type represents a texture object.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`texture`](/api/draw/managed/texture "This type represents a texture object.") type. All of its base methods and fields are also available in this type.
 
-> If you pass an unsupported type, it will instead work **exactly** like [`texture`](https://lua.fatality.win/texture.html "This type represents a texture object.") type, meaning controlling frames and looping will be meaningless.
+> If you pass an unsupported type, it will instead work **exactly** like [`texture`](/api/draw/managed/texture "This type represents a texture object.") type, meaning controlling frames and looping will be meaningless.
 
-> Using this type for texture atlases is possible, although highly unrecommended. It will produce extra texture objects in memory, and overall will be much slower. Instead, it is advised to construct an actual texture atlas, use [`texture`](https://lua.fatality.win/texture.html "This type represents a texture object.") type, and use texture mapping.
+> Using this type for texture atlases is possible, although highly unrecommended. It will produce extra texture objects in memory, and overall will be much slower. Instead, it is advised to construct an actual texture atlas, use [`texture`](/api/draw/managed/texture "This type represents a texture object.") type, and use texture mapping.
 
 ## __call
 
@@ -28,7 +28,7 @@ Constructs animated texture.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `data` | [`ptr`](https://lua.fatality.win/ptr.html "This type is a literal pointer.") | Pointer to texture **file** data in memory. |
+| `data` | [`ptr`](/api/common-types/ptr "This type is a literal pointer.") | Pointer to texture **file** data in memory. |
 | `sz` | `int` | Size of the texture **file** data. |
 
 **Returns**

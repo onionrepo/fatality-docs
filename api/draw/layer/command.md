@@ -8,15 +8,15 @@ This type is used to change render command parameters.
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`ptr`](https://lua.fatality.win/ptr.html "This type is a literal pointer.")
+Type: [`ptr`](/api/common-types/ptr "This type is a literal pointer.")
 
-Texture pointer. You can get one from an instance of `texture` type by accessing `obj` field. **Passing invalid data to this field WILL result in a crash**. For a safer way, please use [`set_texture`](https://lua.fatality.win/command.html#set-texture "Sets a texture in a safe manner.").
+Texture pointer. You can get one from an instance of `texture` type by accessing `obj` field. **Passing invalid data to this field WILL result in a crash**. For a safer way, please use [`set_texture`](/api/draw/layer/command?id=set_texture "Sets a texture in a safe manner.").
 
 ## frag_shader
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`ptr`](https://lua.fatality.win/ptr.html "This type is a literal pointer.")
+Type: [`ptr`](/api/common-types/ptr "This type is a literal pointer.")
 
 Fragment shader (aka Pixel Shader in DirectX terms) pointer. You can get one from an instance of `shader` type by accessing `obj` field. **Passing invalid data to this field WILL result in a crash**. For a safer way, please use `set_shader`.
 
@@ -24,7 +24,7 @@ Fragment shader (aka Pixel Shader in DirectX terms) pointer. You can get one fro
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`rect?`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.")
+Type: [`rect?`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.")
 
 Clip rectangle used for scissor testing. If this is set to `nil`, will not clip anything.
 
@@ -34,7 +34,7 @@ Clip rectangle used for scissor testing. If this is set to `nil`, will not clip 
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`rect?`](https://lua.fatality.win/rect.html "This type is a rectangle used within rendering system.")
+Type: [`rect?`](/api/draw/common-types/rect "This type is a rectangle used within rendering system.")
 
 UV rect used for texture mapping. If this field is set to `nil`, will use `0, 0, 1, 1` rectangle to map the texture. You can learn more about texture mapping in the tutorial section.
 
@@ -110,7 +110,7 @@ If set to `true`, will use a separate texture sampler that supports tiling. By d
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`render_mode`](https://lua.fatality.win/render-mode.html "This enum is used to toggle rendering modes.")
+Type: [`render_mode`](/api/draw/layer/command/render-mode "This enum is used to toggle rendering modes.")
 
 Rendering mode. You can read more about it in the type's documentation.
 
@@ -124,7 +124,7 @@ Sets a texture in a safe manner.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `tex` | [`texture`](https://lua.fatality.win/texture.html "This type represents a texture object.") | Texture object. |
+| `tex` | [`texture`](/api/draw/managed/texture "This type represents a texture object.") | Texture object. |
 
 **Returns**
 

@@ -16,7 +16,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`ptr`](https://lua.fatality.win/ptr.html "This type is a literal pointer.") | Back buffer texture pointer. |
+| [`ptr`](/api/common-types/ptr "This type is a literal pointer.") | Back buffer texture pointer. |
 
 **Example**
 
@@ -38,7 +38,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`ptr`](https://lua.fatality.win/ptr.html "This type is a literal pointer.") | Downsampled back buffer texture pointer. |
+| [`ptr`](/api/common-types/ptr "This type is a literal pointer.") | Downsampled back buffer texture pointer. |
 
 **Example**
 
@@ -60,7 +60,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`ptr`](https://lua.fatality.win/ptr.html "This type is a literal pointer.") | Shared texture pointer. |
+| [`ptr`](/api/common-types/ptr "This type is a literal pointer.") | Shared texture pointer. |
 
 **Example**
 

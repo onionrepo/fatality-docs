@@ -2,7 +2,7 @@
 
 This type represents an SVG texture object.
 
-> This type inherits [`texture`](https://lua.fatality.win/texture.html "This type represents a texture object.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`texture`](/api/draw/managed/texture "This type represents a texture object.") type. All of its base methods and fields are also available in this type.
 
 > Passing invalid SVG data to the constructor will cause a **crash**. We will fix this issue in future updates.
 

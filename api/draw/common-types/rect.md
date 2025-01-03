@@ -24,7 +24,7 @@ None.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `value` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Mins vector, maxs vector. |
+| `value` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Mins vector, maxs vector. |
 
 *4. Double value.*
 
@@ -37,8 +37,8 @@ None.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `mins` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Mins vector. |
-| `maxs` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Maxs vector. |
+| `mins` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Mins vector. |
+| `maxs` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Maxs vector. |
 
 *6. Four values.*
 
@@ -65,7 +65,7 @@ local my_rect = draw.rect(50, 50, 150, 150);
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.")
+Type: [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.")
 
 Mins (top-left) vector.
 
@@ -73,7 +73,7 @@ Mins (top-left) vector.
 
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
-Type: [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.")
+Type: [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.")
 
 Maxs (bottom-right) vector.
 
@@ -169,7 +169,7 @@ None.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `value` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | New size. |
+| `value` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | New size. |
 
 **Returns**
 
@@ -177,7 +177,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Size. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Size. |
 
 *2. Set size.*
 
@@ -201,7 +201,7 @@ Explodes the rectangle by given vector (increase size from center into all direc
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `value` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Explode size. |
+| `value` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Explode size. |
 
 **Returns**
 
@@ -247,7 +247,7 @@ Translates (moves) this rectangle by vector coordinates.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `value` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Translation amount. |
+| `value` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Translation amount. |
 
 **Returns**
 
@@ -516,7 +516,7 @@ Returns `true` if this rectangle contains either vector or another rectangle.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `other` | [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Vector to check against. |
+| `other` | [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Vector to check against. |
 
 *2. Rectangle variant.*
 
@@ -602,7 +602,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Top-left vector. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Top-left vector. |
 
 **Example**
 
@@ -624,7 +624,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Top-right vector. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Top-right vector. |
 
 **Example**
 
@@ -646,7 +646,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Bottom-right vector. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Bottom-right vector. |
 
 **Example**
 
@@ -668,7 +668,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Bottom-left vector. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Bottom-left vector. |
 
 **Example**
 
@@ -690,7 +690,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Center point. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Center point. |
 
 **Example**
 
@@ -714,7 +714,7 @@ Treats this rectangle as an ellipsis and returns point on it. Note, that this "e
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Point on the ellipsis. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Point on the ellipsis. |
 
 **Example**
 

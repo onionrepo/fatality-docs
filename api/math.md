@@ -15,14 +15,14 @@ Calculates angles between 2 vectors.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `src` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Source vector. |
-| `dst` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Destination vector. |
+| `src` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Source vector. |
+| `dst` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Destination vector. |
 
 **Returns**
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Angles. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Angles. |
 
 **Example**
 
@@ -64,15 +64,15 @@ Approaches an angle over time.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `from` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Start angle. |
-| `to` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | End angle. |
+| `from` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Start angle. |
+| `to` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | End angle. |
 | `speed` | `float` | Approach speed. |
 
 **Returns**
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Delta angle. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Delta angle. |
 
 **Example**
 
@@ -90,16 +90,16 @@ Returns a point on the edge of a box.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `mins` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Box mins. |
-| `maxs` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Box maxs. |
-| `dir` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Point direction (angle). |
+| `mins` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Box mins. |
+| `maxs` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Box maxs. |
+| `dir` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Point direction (angle). |
 | `radius` | `float` | Area radius. |
 
 **Returns**
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Point. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Point. |
 
 **Example**
 
@@ -143,14 +143,14 @@ Calculates angles from a vector.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `forward` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Source vector. |
-| `up` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Up vector. Defaults to `nil`. |
+| `forward` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Source vector. |
+| `up` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Up vector. Defaults to `nil`. |
 
 **Returns**
 
 | Type | Description |
 | ---- | ----------- |
-| [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Angles. |
+| [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Angles. |
 
 **Example**
 
@@ -168,14 +168,14 @@ Transforms a point in the game world onto the viewport.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `xyz` | [`vector`](https://lua.fatality.win/vector.html "This type is a common 3D vector (x, y, z).") | Point in the world. |
+| `xyz` | [`vector`](/api/common-types/vector "This type is a common 3D vector (x, y, z).") | Point in the world. |
 | `round` | `bool` | Whether should round the output. Defaults to `true`. |
 
 **Returns**
 
 | Type | Description |
 | ---- | ----------- |
-| [`vec2`](https://lua.fatality.win/vec2.html "This type is a 2D vector used within the rendering system.") | Point on the viewport. |
+| [`vec2`](/api/draw/common-types/vec2 "This type is a 2D vector used within the rendering system.") | Point on the viewport. |
 
 **Example**
 
@@ -269,7 +269,7 @@ local mapped = math.remap_val_clamped(5, 0, 1, 0, 100); -- 100
 
 [![Function][This field is a function and must be invoked using a dot (.)]rw]
 
-An alias to [`draw.vec2()`](https://lua.fatality.win/vec2.html#call "Creates a new 2D vector instance.").
+An alias to [`draw.vec2()`](/api/draw/common-types/vec2#call "This type is a 2D vector used within the rendering system.").
 
 **Example**
 
@@ -281,7 +281,7 @@ local vec = math.vec2(5, 5);
 
 [![Function][This field is a function and must be invoked using a dot (.)]rw]
 
-An alias to [`vector()`](https://lua.fatality.win/vector.html#call "Constructs a vector.").
+An alias to [`vector()`](/api/common-types/vector#call "Constructs a vector.").
 
 **Example**
 

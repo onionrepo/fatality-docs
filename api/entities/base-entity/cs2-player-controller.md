@@ -2,7 +2,7 @@
 
 This type represents a `CCSPlayerController` class.
 
-> This type inherits [`base_entity`](https://lua.fatality.win/base-entity.html "This type represents a base game entity.") type. All of its base methods and fields are also available in this type.
+> This type inherits [`base_entity`](/api/entities/base-entity "This type represents a base game entity.") type. All of its base methods and fields are also available in this type.
 
 ## is_enemy
 
@@ -64,7 +64,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`cs2_player_pawn`](https://lua.fatality.win/cs2-player-pawn.html "This type represents a C_CSPlayerPawn class.") | Pawn instance. |
+| [`cs2_player_pawn`](/api/entities/base-entity/cs2-player-pawn "This type represents a C_CSPlayerPawn class.") | Pawn instance. |
 
 **Example**
 
@@ -86,7 +86,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`cs2_weapon_base_gun`](https://lua.fatality.win/cs2-weapon-base-gun.html "This type represents a CCSWeaponBaseGun class.") | Weapon instance. |
+| [`cs2_weapon_base_gun`](/api/entities/base-entity/cs2-weapon-base-gun "This type represents a CCSWeaponBaseGun class.") | Weapon instance. |
 
 **Example**
 
@@ -108,7 +108,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`base_entity`](https://lua.fatality.win/base-entity.html "This type represents a base game entity.") | Entity. |
+| [`base_entity`](/api/entities/base-entity "This type represents a base game entity.") | Entity. |
 
 **Example**
 
@@ -130,7 +130,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`base_entity`](https://lua.fatality.win/base-entity.html "This type represents a base game entity.") | Entity. |
+| [`base_entity`](/api/entities/base-entity "This type represents a base game entity.") | Entity. |
 
 **Example**
 
@@ -152,7 +152,7 @@ None.
 
 | Type | Description |
 | ---- | ----------- |
-| [`observer_mode_t`](https://lua.fatality.win/observer-mode-t.html "This enum represents the observer modes available in the game.") | Observer mode. |
+| [`observer_mode_t`](/api/entities/observer-mode-t "This enum represents the observer modes available in the game.") | Observer mode. |
 
 **Example**
 

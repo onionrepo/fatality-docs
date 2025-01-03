@@ -2,7 +2,7 @@
 
 Usage: `events.{event_name}`
 
-There are a number of events that Fatality provides to use in the API - from various hooks, to in-game events. Each event entry is an object of [`event_t`](https://lua.fatality.win/event-t.html "Event usertype. An instance of this type can be found in events."). This table documents events to be used by your scripts.
+There are a number of events that Fatality provides to use in the API - from various hooks, to in-game events. Each event entry is an object of [`event_t`](/api/events/event-t "Event usertype. An instance of this type can be found in events."). This table documents events to be used by your scripts.
 
 > You are not required to remove events when your script unloads. It is done automatically by the API engine.
 
@@ -26,7 +26,7 @@ Invoked every time the game progresses onto another frame stage. This event is c
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `stage` | [`client_frame_stage`](https://lua.fatality.win/client-frame-stage.html "Contains keys for various frame rendering stages.") | Current frame stage. |
+| `stage` | [`client_frame_stage`](/api/common-enums/client-frame-stage "Contains keys for various frame rendering stages.") | Current frame stage. |
 
 ## render_start_pre
 
@@ -48,7 +48,7 @@ Invoked every time game starts scene rendering process. This event is called aft
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `setup` | [`cview_setup`](https://lua.fatality.win/cview-setup.html "Describes view setup parameters.") | View setup information. |
+| `setup` | [`cview_setup`](/api/common-types/cview-setup "Describes view setup parameters.") | View setup information. |
 
 ## setup_view_pre
 
@@ -82,7 +82,7 @@ Invoked every time the game internally overrides view information. You are free 
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `setup` | [`cview_setup`](https://lua.fatality.win/cview-setup.html "Describes view setup parameters.") | View setup information. |
+| `setup` | [`cview_setup`](/api/common-types/cview-setup "Describes view setup parameters.") | View setup information. |
 
 ## event
 
@@ -90,11 +90,11 @@ Invoked every time the game internally overrides view information. You are free 
 
 Invoked every time a game event fires.
 
-> We do not listen to every single event that exists in the game. If you need something that we don't listen to, please use [`mods.events`](https://lua.fatality.win/events-t.html "This module lets you manage custom in-game event listener.")
+> We do not listen to every single event that exists in the game. If you need something that we don't listen to, please use [`mods.events`](/api/events/event-t "This module lets you manage custom in-game event listener.")
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `event` | [`game_event_t`](https://lua.fatality.win/game-event-t.html "Describes a game event.") | Game event. |
+| `event` | [`game_event_t`](/api/common-types/game-event-t "Describes a game event.") | Game event. |
 
 ## handle_input
 
@@ -106,5 +106,5 @@ Invoked every time the game processes mouse/controller input. This is a good pla
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `type` | [`input_type_t`](https://lua.fatality.win/input-type-t.html "Contains keys for value input options.") | Type of the input. |
-| `value` | [`ref_holder_t<float>`](https://lua.fatality.win/ref-holder-t.html "This type acts as a proxy for reference variables that are used internally. Since Lua is a value-only language, it does not support references. Instead, an instance of this type is used to preserve interoperability with C++.") | Input value. |
+| `type` | [`input_type_t`](/api/common-enums/input-type-t "Contains keys for value input options.") | Type of the input. |
+| `value` | [`ref_holder_t<float>`](/api/common-types/ref-holder-t "This type acts as a proxy for reference variables that are used internally. Since Lua is a value-only language, it does not support references. Instead, an instance of this type is used to preserve interoperability with C++.") | Input value. |
