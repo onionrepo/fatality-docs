@@ -22,6 +22,14 @@ Type: [`notification_system`](/api/gui/notification-system "This type represents
 
 Notification system.
 
+## input
+
+[![Field][This field is a regular field that must be accessed using a dot (.).]rw]
+
+Type: [`context_input`](/api/gui/context-input "This type represents the GUI input context.")
+
+Input context.
+
 ## make_control
 
 [![Function][This field is a function and must be invoked using a dot (.)]rw]

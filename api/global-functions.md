@@ -11,7 +11,7 @@ Prints text to game's console.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `text` | string | String to print in the console. |
+| `...` | ... | Values to print in the console. |
 
 **Returns**
 
@@ -20,7 +20,7 @@ Nothing.
 **Example**
 
 ```lua
-print('Hello world!'); -- prints out "Hello world!" to the console
+print('Hello world!', 123); -- prints out "Hello world! 123" to the console
 ```
 
 ## error

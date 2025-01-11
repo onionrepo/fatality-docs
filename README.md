@@ -18,11 +18,12 @@ Throughout the API reference, you’ll encounter various labels used to describe
 
 ### Labels
 
-[![Field][https://google.com]rw]
-[![Function][https://google.com]rw]
-[![Method][https://google.com]rw]
-[![Constructor][https://google.com]rw]
-[![Read Only][https://google.com]r]
+[![Field][This field is a regular field that must be accessed using a dot (.).]rw]
+[![Function][This is a regular function that must be called using a dot (.).]rw]
+[![Method][This field is a method and must be invoked using a colon (:).]rw]
+[![Constructor][This is a constructor definition for this type.]rw]
+[![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
+[![Insecure Only][This function exists only when "Allow insecure" is enabled.]i]
 
 All the possible labels are listed above.
 
@@ -35,6 +36,8 @@ All the possible labels are listed above.
 * **Constructor**: this label indicates that the item is a **constructor** definition. You don't have to call any field in particular, but instead you must invoke the **type itself** (example: `vector` has `__call`, meaning you should invoke it like this: `vector()`).
 
 * **Read Only**: this label indicates that the item is **read only**, and it's value cannot be changed. Typically, this restriction does not extend to any child elements.
+
+* **Insecure Only**: this label indicates that the item is **insecure only**, and won't be accessible when 'Allow insecure' is turned off in the Lua settings.
 
 ### Argument and return lists
 Arguments and return values are listed in the exact order you must supply or capture them. For instance, if a parameter is shown first, it is to be passed as the first argument to the function. The same goes for return values: the first listed value will be placed in the first variable you declare, and so on.

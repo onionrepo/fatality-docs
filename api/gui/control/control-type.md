@@ -163,3 +163,9 @@ Basic widget control.
 [![Field][This field is a regular field that must be accessed using a dot (.).]rw]
 
 Settings control.
+
+## image
+
+[![Field][This field is a regular field that must be accessed using a dot (.).]rw]
+
+Image control.

@@ -108,3 +108,17 @@ Invoked every time the game processes mouse/controller input. This is a good pla
 | ---- | ---- | ----------- |
 | `type` | [`input_type_t`](/api/common-enums/input-type-t "Contains keys for value input options.") | Type of the input. |
 | `value` | [`ref_holder_t<float>`](/api/common-types/ref-holder-t "This type acts as a proxy for reference variables that are used internally. Since Lua is a value-only language, it does not support references. Instead, an instance of this type is used to preserve interoperability with C++.") | Input value. |
+
+## input
+
+[![Field][This field is a regular field that must be accessed using a dot (.).]rw]
+
+Invoked every time the GUI processes input.
+
+**Arguments**
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| `msg` | `int` | System message. [Documentation](https://learn.microsoft.com/en-us/windows/win32/winmsg/about-messages-and-message-queues#system-defined-messages) |
+| `w` | `int` | WPARAM. |
+| `l` | `int` | LPARAM. |

@@ -52,6 +52,10 @@
     background: #4595ff !important;
 }
 
+.badge.insecure {
+    background: #f45c4a !important;
+}
+
 .badge span {
     padding: 2px 8px;
 }
