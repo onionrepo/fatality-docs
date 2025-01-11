@@ -25,11 +25,12 @@
           function addBadges(hook, vm) {
             hook.beforeEach(function(content) {
               return content.replace(
-                /\[\!\[([^\]]+)\]\[([^\]]+)\]([rw]|rw|d)\]/g,
+                /\[\!\[([^\]]+)\]\[([^\]]+)\]([rw]|rw|d|i)\]/g,
                 function(match, text, tooltip, type) {
                   const typeClass = type === 'r' ? 'read' : 
                                   type === 'w' ? 'write' : 
                                   type === 'rw' ? 'readwrite' : 
+                                  type === 'i' ? 'insecure' : 
                                   'default';
                   return `<span class="badge ${typeClass}" data-tooltip="${tooltip}">
                     <span>${text}</span>
