@@ -82,3 +82,59 @@ events.present_queue:add(function()
     layer.font = nil
 end)
 ```
+
+## UI System
+
+### Basic Usage
+
+```lua
+local group = gui.ctx:find('lua>elements b') -- Returns container
+
+local checkbox_id = gui.control_id('example_checkbox')
+local checkbox = gui.checkbox(checkbox_id)
+local checkbox_object = gui.make_control('Example Checkbox', checkbox) -- Adds label
+
+group:add(checkbox_object)
+group:reset() -- Moves to next row
+```
+
+### Create a Notification
+
+```lua
+local notification_obj = gui.notification('Header Text', 'Body Text')
+
+gui.notify:add(notification_obj)
+```
+
+### Combo Box Usage
+
+```lua
+local group = gui.ctx:find('lua>elements b')
+
+local combobox_id = gui.control_id('example_comboboxx')
+local combobox = gui.combo_box(combobox_id)
+local combobox_object = gui.make_control('Example Combo Box', combobox)
+
+local selectable1 = gui.selectable(gui.control_id('example_selectable1'), "Example 1")
+local selectable2 = gui.selectable(gui.control_id('example_selectable2'), "Example 2")
+local selectable3 = gui.selectable(gui.control_id('example_selectable3'), "Example 3")
+
+combobox:add(selectable1) -- Add the selectable to the combo box's container
+combobox:add(selectable2)
+combobox:add(selectable3)
+
+group:add(combobox_object)
+group:reset()
+
+combobox:add_callback(function()
+    local raw_value = combobox:get_value():get():get_raw()
+
+    local index = 1
+    while raw_value > 1 do -- Bit shift to correct current API output (1,2,4 to 1,2,3)
+        raw_value = bit.rshift(raw_value, 1)
+        index = index + 1
+    end
+
+    print(index) -- [lua] 3
+end)
+```
