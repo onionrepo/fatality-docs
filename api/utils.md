@@ -125,7 +125,7 @@ local hash = utils.fnv1a('Hello');
 ## find_export
 
 [![Function][This is a regular function that must be called using a dot (.).]rw]
-[![Insecure Only][This function exists only when "Allow insecure" is enabled.]i]
+[![Insecure Only][This function exists only when 'Allow insecure' is enabled.]i]
 
 Returns an address to an export in an image.
 
@@ -151,7 +151,7 @@ local message_box = utils.find_export('user32.dll', 'MessageBoxA');
 ## find_pattern
 
 [![Function][This is a regular function that must be called using a dot (.).]rw]
-[![Insecure Only][This function exists only when "Allow insecure" is enabled.]i]
+[![Insecure Only][This function exists only when 'Allow insecure' is enabled.]i]
 
 Searches for a code pattern in an image.
 
@@ -177,7 +177,7 @@ local something = utils.find_pattern('engine2.dll', 'DE AD ? ? ? ? BE EF');
 ## clipboard_get
 
 [![Function][This is a regular function that must be called using a dot (.).]rw]
-[![Insecure Only][This function exists only when "Allow insecure" is enabled.]i]
+[![Insecure Only][This function exists only when 'Allow insecure' is enabled.]i]
 
 Returns current clipboard content.
 
@@ -200,7 +200,7 @@ local clip = utils.clipboard_get();
 ## clipboard_set
 
 [![Function][This is a regular function that must be called using a dot (.).]rw]
-[![Insecure Only][This function exists only when "Allow insecure" is enabled.]i]
+[![Insecure Only][This function exists only when 'Allow insecure' is enabled.]i]
 
 Sets new clipboard content.
 

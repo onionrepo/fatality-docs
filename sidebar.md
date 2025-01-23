@@ -1,5 +1,6 @@
 * [Quick Links](/quick-links.md)
 * [Home](/)
+    * [Examples](start/examples.md)
     * [First Steps](start/first-steps.md)
     * [Adding UI](start/adding-ui.md)
     * [Creating Libraries](start/creating-libraries.md)

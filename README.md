@@ -23,7 +23,7 @@ Throughout the API reference, you’ll encounter various labels used to describe
 [![Method][This field is a method and must be invoked using a colon (:).]rw]
 [![Constructor][This is a constructor definition for this type.]rw]
 [![Read Only][This field is a read only field, and you cannot change its value. This does not apply to child fields, if any.]r]
-[![Insecure Only][This function exists only when "Allow insecure" is enabled.]i]
+[![Insecure Only][This function exists only when 'Allow insecure' is enabled.]i]
 
 All the possible labels are listed above.
 
